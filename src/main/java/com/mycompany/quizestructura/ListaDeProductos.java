@@ -19,7 +19,7 @@ public class ListaDeProductos {
 
     // Agregar producto
     public void agregarProducto(Producto producto) {
-        producto.id = siguienteId++;  // acceso directo
+        producto.id = siguienteId++;  // id automatico
         NodoProducto nuevo = new NodoProducto(producto);
 
         if (cabeza == null) {
