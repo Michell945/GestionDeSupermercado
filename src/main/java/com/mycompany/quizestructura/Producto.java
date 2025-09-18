@@ -15,7 +15,6 @@ public class Producto {
     public double precio;
     public int stock;
     
-    // Constructor
     public Producto(String nombre, String descripcion, double precio, int stock) {
         this.nombre = nombre;
         this.descripcion = descripcion;
