@@ -41,7 +41,7 @@ public class Main {
         sc.close();
     }
 
-    // Submenú para CRUD de productos
+    // CRUD de productos
     private static void gestionarProductos(Scanner sc, ListaDeProductos inventario) {
         boolean volver = false;
         while (!volver) {
@@ -119,7 +119,6 @@ public class Main {
         }
     }
 
-    // Flujo de venta: registrar usuario, seleccionar productos, finalizar compra
     private static void venderProductos(Scanner sc, ListaDeProductos inventario, ListaDeCarro carrito) {
         carrito.vaciarCarrito(); // empezamos con carrito vacío
         System.out.println("\n--- VENDER PRODUCTOS ---");
@@ -175,7 +174,7 @@ public class Main {
             }
         }
 
-        // Mostrar resumen de compra
+        // resumen de la compra
         System.out.println("\n=== RESUMEN DE COMPRA ===");
         System.out.println("Cliente: " + cliente.nombre + " => Cedula: " + cliente.cedula);
         carrito.listarCarrito();
